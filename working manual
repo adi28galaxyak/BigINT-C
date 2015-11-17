@@ -1,0 +1,72 @@
+data type - bigInt 
+syntax to declare data type - bigInt a;
+
+
+Functions in arithematic.h
+
+void scan( bigInt* )
+eg: input(&a);
+It means we take input in a from user
+
+void print( bigInt *)
+eq: print(&a)
+It means we print the value without sign for positive number and with sign for negative 
+
+void printSign( bigInt *) 
+It prints the sign of bigInt
+
+void printBigInt(bigInt *)
+It prints the sign and value of bigInt
+
+char *str(int )
+It converts integer to string
+
+int integer(char *)
+It converts string to integer
+
+char *trim(char *a)
+Extra zeros are removed from a
+eg: if a = "+000156" after trim a = "+156"
+
+char *trimSign(char *a)
+Extra zeros and sign are removed from a
+eg: if a = "+000156" after trimSign a = "156"
+
+int cmp(char *a, char *b)
+compares a and b
+return type int;
+{a>b, a==b, a<b} -> {1, 0, -1}
+
+void status(bigInt *)
+updates the sign, extra, of a
+
+void eq(char *, char *)
+It copies data of one string into another (2,1)
+
+void eqBigInt(bigInt *, char *s)
+eg: eq(&a, "123");
+It means we assign a.INT = s;
+
+char *ABS(char *)
+return trimSign(a) where the value of a is positve
+NOTE: IF VALUE IS NEGATIVE IT RETURNS VALUE WITH '+' SIGN
+
+char *add(char *, char *)
+eg: add(a.INT, b.INT)
+return char*
+
+char *sub(char *, char *)
+eg: sub(a.INT, b.INT)
+return char*
+
+char *mul(char *, char *)
+eg: mul(a.INT, b.INT)
+return char *
+
+char *mod(char *, char *)
+eg: mod(a.INT, b.INT)
+return char *
+
+char *div(char *, long long)
+eg: div(a.INT, val)
+return char *
